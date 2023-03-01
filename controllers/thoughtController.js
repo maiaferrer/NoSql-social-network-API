@@ -1,12 +1,13 @@
 const Thought = require("../models/thought");
 
+// get all thoughts
 function getThoughts(req, res) {
-    // get thoughts from model
     Thought.find()
       .then((data) => res.json(data))
       .catch((err) => res.status(500).json(err));
 }
 
+// get single thought
 function getSingleThought (req, res) {
     Thought.findOne({ _id: req.params.thoughtId })
       .select('-__v')
@@ -17,6 +18,14 @@ function getSingleThought (req, res) {
       )
       .catch((err) => res.status(500).json(err));
 }
+// create a thought 
+
+
+// delete a thought
+
+
+// update a thought
+
 
 
 module.exports = {
