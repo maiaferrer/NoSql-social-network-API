@@ -60,6 +60,18 @@ deleteThought(req, res) {
 
 
 // update a thought
-
+updateThought(req, res) {
+    Thought.findOneAndUpdate(
+      { _id: req.params.thoughtId},
+      { $set: req.body },
+      { runValidators: true, new: true }
+    )
+      .then((dbThoughtData) =>
+        !dbThoughtData
+          ? res.status(404).json({ message: "No thought associated with this id!" })
+          : res.json(dbThoughtData)
+      )
+      .catch((err) => res.status(500).json(err));
+  },
 
 };
