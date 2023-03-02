@@ -92,4 +92,13 @@ createReaction(req, res) {
       .catch((err) => res.status(500).json(err))
     },
 // delete reaction
+deleteReaction(req, res) {
+    Thought.findOneAndUpdate(
+      { _id: req.params.thoughtId },
+      { $pull: { reactions: req.body} },
+      { new: true }
+    )
+    .then(() => res.json({message: 'reaction successfully deleted!'}))
+    .catch((err) => res.status(500).json(err));
+  },
 };
