@@ -2,11 +2,13 @@
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
+![screenshot of Insomnia](./Insomnia/insomnia-screen.png)
+
 ## Project Description
 
 This is a test task for a future social network built without any starter code. Given the routes developed, the current functions include; creating a user, updating a user, the users elgibility to create thoughts and reactions, which can up updated and deleted as well. Currently, there is no front end interface.
 
-All routes were tested using Insomnia which you can check out [HERE]() !
+All routes were tested using Insomnia which you can check out [HERE](https://www.youtube.com/watch?v=AjmnPAGOa6U) !
 
 ## Installation & Usage
 
@@ -44,8 +46,8 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Important Links
 
-- [GitHub Repository](https://github.com/maiaferrer/team-profile-generator)
-- [Demo](https://youtu.be/CHCe77cbL7Y)
+- [GitHub Repository](https://github.com/maiaferrer/NoSql-social-network-API)
+- [Demo](https://www.youtube.com/watch?v=AjmnPAGOa6U)
 
 ## Technology used
 
